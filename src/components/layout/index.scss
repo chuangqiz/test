@@ -54,5 +54,9 @@ $themeBottomBold: 5px;
   background-color: $themeBGC;
   color: $thememColor;
   font-size: $themeFontSize;
-  padding: 30px 50px;
+}
+
+.el-breadcrumb {
+  font-size: 16px;
+  padding: 10px;
 }

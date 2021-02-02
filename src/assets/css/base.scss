@@ -1,0 +1,25 @@
+.st-page {
+  box-shadow: 1px 1px 2px 3px rgba(0,0,0,.1);
+  background-color: rgba(239,238,243,.1);
+}
+
+.st-breadcrumb {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.st-search {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.st-tab {
+  margin-bottom: 50px;
+}
+// 分页
+.st-pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-right: 20px;
+} 

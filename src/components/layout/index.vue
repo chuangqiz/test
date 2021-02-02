@@ -21,10 +21,23 @@
   </el-header>
   <el-container>
     <el-aside class="aside">
-      <el-menu>
+      <el-menu
+        default-active="1"
+        @open="handleOpen"
+        @close="handleClose"
+        unique-opened
+        background-color="#545c64"
+        text-color="#fff"
+        active-text-color="#ffd04b">
+        <el-submenu
+          index="1">
+          <el-menu-item></el-menu-item>
+        </el-submenu>
       </el-menu>
     </el-aside>
-    <el-main>Main</el-main>
+    <el-main>
+      <router-view />
+    </el-main>
   </el-container>
 </el-container>
 </template>
@@ -61,7 +74,34 @@ export default {
         }
       ],
       navMenu: [],
+      navMenu1: [
+        {
+          index: 0,
+          title: '导航一',
+          items: [
+            {
+              title: '选项1-1'
+            },
+            {
+              title: '选项1-2'
+            }
+          ]
+        },
+        {
+          index: 1,
+          title: '导航二',
+          items: [
+            {
+              title: '选项2-1'
+            },
+            {
+              title: '选项2-2'
+            }
+          ]
+        }
+      ],
       items: [],
+      nav: [],
       navMenuIndex: 0
     }
   },
@@ -86,12 +126,24 @@ export default {
       })
     },
     navClick (item) {
+      // console.log(item.name)
+      // this.$router.push({ name: item.name })
+      this.nav = this.navMenu1.filter(v => {
+        return v.index === item.index
+      })
+      console.log(this.nav)
       this.navMenuIndex = item.index
+    },
+    handleOpen (key, keyPath) {
+      console.log(key, keyPath)
+    },
+    handleClose (key, keyPath) {
+      console.log(key, keyPath)
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import './index.scss'
 </style>

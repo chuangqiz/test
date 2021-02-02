@@ -8,7 +8,13 @@ import ElementUI from 'element-ui'
 import './assets/css/reset.scss'
 import './assets/css/base.scss'
 import 'element-ui/lib/theme-chalk/index.css'
+
+import { services } from './api/index'
+
+Vue.prototype.$api = services
+
 Vue.use(ElementUI)
+
 Vue.config.productionTip = false
 
 new Vue({

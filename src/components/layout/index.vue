@@ -12,10 +12,11 @@
             {{ item.title }}
           </li>
       </ul>
-      <ul>
-        <li>个人中心</li>
-        <li>1</li>
-        <li>2</li>
+      <ul class="header-right">
+        <li class="el-icon-s-home">返回官网</li>
+        <li class="el-icon-user-solid icon-arrow-down">123@qq.com</li>
+        <li class="el-icon-chat-dot-round icon-arrow-down"><i class="icon-message">5</i>系统消息</li>
+        <li class="el-icon-switch-button">注销</li>
       </ul>
     </div>
   </el-header>
@@ -26,13 +27,29 @@
         @open="handleOpen"
         @close="handleClose"
         unique-opened
-        background-color="#545c64"
+        background-color="#2b343d"
         text-color="#fff"
-        active-text-color="#ffd04b">
-        <el-submenu
-          index="1">
-          <el-menu-item></el-menu-item>
-        </el-submenu>
+        active-text-color="#ff6329">
+          <el-menu-item index="1">
+            <template slot="title">
+              <i class="el-icon-orange"></i>
+              <span>直播控制台</span>
+            </template>
+          </el-menu-item>
+          <el-menu-item index="2">
+            <template slot="title">
+              <i class="el-icon-video-camera"></i>
+              <span>直播管理</span>
+            </template>
+          </el-menu-item>
+          <el-submenu index="3">
+            <template slot="title">
+              <i class="el-icon-folder-opened"></i>
+              <span>媒体库</span>
+            </template>
+            <el-menu-item index="3-1">永久存储</el-menu-item>
+            <el-menu-item index="3-2">精彩回放</el-menu-item>
+          </el-submenu>
       </el-menu>
     </el-aside>
     <el-main>

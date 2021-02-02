@@ -1,6 +1,7 @@
 .st-page {
   box-shadow: 1px 1px 2px 3px rgba(0,0,0,.1);
-  background-color: rgba(239,238,243,.1);
+  background-color: rgb(244,244,244);
+  border: 1px solid #fff;
 }
 
 .st-breadcrumb {
@@ -23,3 +24,37 @@
   padding-bottom: 20px;
   padding-right: 20px;
 } 
+
+// 后台管理系统页面的布局
+.st-title {
+  position: relative;
+  background-color: #fde9d0;
+  color: #fc8954;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.el-icon-close:before {
+  position: absolute;
+  color: #dcccb5;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.st-card-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  .st-card-left {
+    flex: 1;
+    background-color: #efeef3;
+  }
+  .st-card-right {
+    flex: 2;
+    background-color: red;
+    margin-right: 20px;
+  }
+}

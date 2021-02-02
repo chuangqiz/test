@@ -1,0 +1,58 @@
+$themeBGC: #2b343d;
+$themeFontSize: 24px;
+$thememColor: #fff;
+$themeBottomColor: #fbbb3d;
+$asideW: 200px;
+$themeBottomBold: 5px;
+.header {
+  position: relative;
+  width: 100vw;
+  height: 60px;
+  background-color: $themeBGC;
+  color: $thememColor;
+  font-size: $themeFontSize;
+  line-height: 55px;
+  img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: calc(#{$asideW} / 2);
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  .header-main {
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+    // margin-left: 200px;
+    margin-right: 30px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      li {
+        align-items: flex-end;
+        padding: 0 20px;
+        cursor: pointer;
+        &.active {
+          border-bottom: $themeBottomBold solid $themeBottomColor;
+        }
+      }
+    }
+  }
+}
+
+.aside {
+  width: $asideW!important;
+  height: calc(100vh - 60px);
+  background-color: $themeBGC;
+  color: $thememColor;
+  font-size: $themeFontSize;
+  padding: 30px 50px;
+}

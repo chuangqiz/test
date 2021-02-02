@@ -1,0 +1,100 @@
+[
+  {
+    "title": "切换栏一",
+    "name": "SwitchOne",
+    "path": "basic/one",
+    "index": 0,
+    "items": [
+        {
+          "title": "选项卡一",
+          "name": "S1-TabOne",
+          "path": "basic/one/one",
+          "index": 0,
+          "items": [
+            {
+              "title": "栏目一",
+              "name": "S1-T1-ItemOne",
+              "path": "basic/one/one/one",
+              "index": 0
+            },
+            {
+              "title": "栏目二",
+              "name": "S1-T1-ItemTwo",
+              "path": "basic/one/one/two",
+              "index": 1
+            },
+            {
+              "title": "栏目三",
+              "name": "S1-T1-ItemThree",
+              "path": "basic/one/one/three",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "title": "选项栏二",
+          "name": "S1-TabTwo",
+          "path": "basic/one/two",
+          "index": 1,
+          "items": [
+            {
+              "title": "栏目一",
+              "name": "S1-T2-ItemOne",
+              "path": "basic/one/two/one",
+              "index": 0
+            },
+            {
+              "title": "栏目二",
+              "name": "S1-T2-ItemTwo",
+              "path": "basic/one/two/two",
+              "index": 1
+            }
+          ]
+        }
+    ]
+  },
+  {
+    "title": "切换栏二",
+    "name": "SwitchTwo",
+    "path": "basic/two",
+    "index": 1,
+    "items": [
+      {
+        "title": "选项卡一",
+        "name": "S2-Tab",
+        "path": "basic/two/one",
+        "index": 0,
+        "items": [
+          {
+            "title": "栏目一",
+            "name": "S2-T1-ItemTwo",
+            "path": "basic/two/one/one",
+            "index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "切换栏三",
+    "name": "SwitchThree",
+    "path": "basic/three",
+    "index": 2,
+    "items": [
+      {
+        "title": "选项卡一",
+        "name": "S3-Tab",
+        "path": "basic/three/one",
+        "index": 0,
+        "items": [
+          {
+            "title": "栏目一",
+            "name": "S3-T1-ItemOne",
+            "path": "basic/three/one/one",
+            "index": 0
+          }
+        ]
+      }
+    ]
+  }
+]

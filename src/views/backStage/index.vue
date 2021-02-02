@@ -6,7 +6,10 @@
       <i class="el-icon-close"></i>
     </div>
     <div class="st-card-wrapper">
-      <div class="st-card-left">123</div>
+      <div class="st-card-left">
+        <i class="el-icon-postcard"></i>
+        个人信息
+      </div>
       <div class="st-card-right">123</div>
       <div class="st-card-left">123</div>
       <div class="st-card-right">123</div>

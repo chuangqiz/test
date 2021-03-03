@@ -23,6 +23,10 @@ function $post (url, data = {}) {
   return instance.post(url, data)
 }
 
+function $header (url, data = {}) {
+  return instance.$get(url, data)
+}
+
 class Service {
   user = {
     login: data => $post(`${Config.BaseUrl}/login`, data),
